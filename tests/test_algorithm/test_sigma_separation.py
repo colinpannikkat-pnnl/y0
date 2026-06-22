@@ -119,4 +119,6 @@ class TestSigmaSeparation(unittest.TestCase):
                 self.assertEqual(
                     d, are_d_separated(graph, left, right, conditions=conditions).separated
                 )
-                self.assertEqual(s, are_sigma_separated(graph, left, right, conditions=conditions))
+                self.assertEqual(
+                    s, are_sigma_separated(graph, left, right, conditions=conditions).separated
+                )
